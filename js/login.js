@@ -1,20 +1,18 @@
-const togglePasswordDisplayButton = document.getElementById('toggle-password-display-button');
+const passwordVisibilityButton = document.getElementById('password-visibility-button');
 
-function toggleDisplayPassword() {
-    const input = document.getElementById('password-input-id');
-    const icon = document.getElementById('foo');
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('password-input');
+    const passwordIcon = document.getElementById('password-visibility-icon');
 
-    if (icon.classList.contains('fa-eye-slash')) {
-        icon.classList.remove('fa-eye-slash');
-        icon.classList.add('fa-eye');
-        input.type = 'text';
+    if (passwordIcon.classList.contains('fa-eye-slash')) {
+        passwordIcon.classList.replace('fa-eye-slash', 'fa-eye');
+        passwordInput.type = 'text';
     } else {
-        icon.classList.remove('fa-eye');
-        icon.classList.add('fa-eye-slash');
-        input.type = 'password';
+        passwordIcon.classList.replace('fa-eye', 'fa-eye-slash');
+        passwordInput.type = 'password';
     }
 }
 
-togglePasswordDisplayButton.addEventListener('click', function() {
-    toggleDisplayPassword();
+passwordVisibilityButton.addEventListener('click', function() {
+    togglePasswordVisibility();
 });

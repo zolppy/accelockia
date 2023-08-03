@@ -8,45 +8,30 @@
 body {
     background-image: url('../assets/img/login-bg.jpg');
     font-family: 'Source Sans 3', sans-serif;
-}
-
-h2 {
-    color: white;
+    /* For small screens */ /* It's works??? */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #form-wrap {
-    background-color: rgba(0, 0, 0, .6);
-    padding: 15px 30px;
     border-radius: 20px;
-    box-shadow: 1px 2px 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, .7);
     width: 400px;
 }
 
-.form-control {
+#form-wrap,
+.form-control,
+.form-control:focus,
+#email-icon-wrap,
+#password-visibility-button {
     background-color: rgba(0, 0, 0, .6);
 }
 
-.form-control::placeholder {
-    color: white;
-}
-
-#toggle-password-display-button {
-    background-color: rgba(0, 0, 0, .6);
-}
-
-#toggle-password-display-button > i {
-    color: white;
-}
-
-#email-i-wrap {
-    background-color: rgba(0, 0, 0, .6);
-    color: white;
-}
-
-.form-control:focus {
-    background-color: rgba(0, 0, 0, .6);
-}
-
-#email-input-id, #password-input-id {
-    color: white;
+.subtitle,
+.form-control::placeholder,
+#email-input,
+#email-icon-wrap,
+#password-input,
+#password-visibility-icon {
+    color: rgba(255, 255, 255, 1);
 }

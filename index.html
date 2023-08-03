@@ -18,25 +18,25 @@
     <title>Accelockia X</title>
 </head>
 <body>
-    <header class="bg-gradient text-center pt-2 pb-2">
-        <h1 class="fw-bold">Accelockia X</h1>
+    <header class="bg-gradient text-center py-2">
+        <h1 class="fw-bold fs-1">Accelockia X</h1>
     </header>
     <main>
         <div id="container" class="d-flex flex-column align-items-center">
-            <div id="form-wrap" class="mt-5">
+            <div id="form-wrap" class="mt-5 py-3 px-4">
                 <form action="login.php" method="post" autocomplete="on">
-                    <h2 class="mb-5 text-center">Login</h2>
+                    <h2 class="subtitle mb-5 text-center fs-2">Login</h2>
                     <div id="email-input-wrap" class="mb-3 input-group">
-                        <input type="email" class="form-control form-control-lg" id="email-input-id" placeholder="E-mail">
-                        <span id="email-i-wrap" class="input-group-append input-group-text col-2 d-flex justify-content-center">
+                        <input type="email" name="email-input" class="form-control form-control-lg" id="email-input" placeholder="E-mail" autocomplete="email">
+                        <span id="email-icon-wrap" class="input-group-append input-group-text col-2 d-flex justify-content-center">
                             <i class="fa fa-envelope"></i>
                         </span>
                     </div>
                     <div id="password-input-wrap" class="mb-3 input-group">
-                        <input type="password" id="password-input-id" class="form-control form-control-lg" aria-describedby="passwordHelpBlock" placeholder="Senha">
-                        <button type="button" id="toggle-password-display-button" class="input-group-append input-group-text col-2 d-flex justify-content-center">
-                            <i id="foo" class="fa fa-eye-slash"></i>
-                        </butto>
+                        <input type="password" name="password-input" id="password-input" class="form-control form-control-lg" placeholder="Senha">
+                        <button type="button" id="password-visibility-button" class="input-group-append input-group-text col-2 d-flex justify-content-center">
+                            <i id="password-visibility-icon" class="fa fa-eye-slash"></i>
+                        </button>
                     </div>
                     <div id="login-button-wrap" class="d-flex justify-content-end">
                         <button id="login-button" class="btn btn-primary" type="submit">Entrar</button>
@@ -45,7 +45,7 @@
             </div>
         </div>
     </main>
-    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100 b-0 position-fixed fixed-bottom pt-1 pb-1">
+    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100 b-0 position-fixed fixed-bottom py-1">
         <span>&copy; Accelockia X 2023 | Gabriel Cavalcante</span>
         <span>accelockia-x@gmail.com</span>
     </footer>
