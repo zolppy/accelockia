@@ -4,10 +4,5 @@ header {
 }
 
 #logo {
-    width: 16%;
-}
-
-.x-centralize {
-    margin-left: 27%;
-    margin-right: auto;
+    min-width: 100px;
 }

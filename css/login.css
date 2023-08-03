@@ -39,6 +39,10 @@ body {
         background-image: url('../assets/img/phone-login-bg.png');
     }
 
+    #logo {
+        min-width: 100px;
+    }
+
     #form-wrap {
         width: 350px;
     }
