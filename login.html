@@ -18,23 +18,23 @@
     <title>Accelockia X</title>
 </head>
 <body>
-    <header class="bg-gradient text-center">
-        <h1>Accelockia X</h1>
+    <header class="bg-gradient text-center pt-2 pb-2">
+        <h1 class="fw-bold">Accelockia X</h1>
     </header>
     <main>
         <div id="container" class="d-flex flex-column align-items-center">
             <div id="form-wrap" class="mt-5">
-                <form action="login.php" method="post" class="form-inline" autocomplete="off">
+                <form action="login.php" method="post" autocomplete="on">
                     <h2 class="mb-5 text-center">Login</h2>
                     <div id="email-input-wrap" class="mb-3 input-group">
-                        <input type="email" class="form-control" id="email-input-id" placeholder="E-mail">
-                        <span id="email-i-wrap" class="input-group-append input-group-text">
+                        <input type="email" class="form-control form-control-lg" id="email-input-id" placeholder="E-mail">
+                        <span id="email-i-wrap" class="input-group-append input-group-text col-2 d-flex justify-content-center">
                             <i class="fa fa-envelope"></i>
                         </span>
                     </div>
                     <div id="password-input-wrap" class="mb-3 input-group">
-                        <input type="password" id="password-input-id" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Senha">
-                        <button type="button" id="toggle-password-display-button" class="input-group-append input-group-text">
+                        <input type="password" id="password-input-id" class="form-control form-control-lg" aria-describedby="passwordHelpBlock" placeholder="Senha">
+                        <button type="button" id="toggle-password-display-button" class="input-group-append input-group-text col-2 d-flex justify-content-center">
                             <i id="foo" class="fa fa-eye-slash"></i>
                         </butto>
                     </div>
@@ -45,7 +45,7 @@
             </div>
         </div>
     </main>
-    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100">
+    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100 b-0 position-fixed fixed-bottom pt-1 pb-1">
         <span>&copy; Accelockia X 2023 | Gabriel Cavalcante</span>
         <span>accelockia-x@gmail.com</span>
     </footer>
