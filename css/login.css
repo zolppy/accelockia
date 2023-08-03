@@ -8,9 +8,9 @@
 body {
     background-image: url('../assets/img/login-bg.jpg');
     font-family: 'Source Sans 3', sans-serif;
-    /* For small screens */ /* It's works??? */
-    overflow-y: hidden;
-    overflow-x: hidden;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #form-wrap {
@@ -18,6 +18,7 @@ body {
     box-shadow: 1px 2px 20px rgba(255, 255, 255, .7);
     width: 400px;
 }
+
 
 #form-wrap,
 .form-control,
@@ -34,4 +35,15 @@ body {
 #password-input,
 #password-visibility-icon {
     color: rgba(255, 255, 255, 1);
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url('../assets/img/phone-login-bg.png');
+    }
+
+    #form-wrap {
+        width: 350px;
+    }
 }
