@@ -2,3 +2,12 @@ header {
     background-color: indigo;
     color: white;
 }
+
+#logo {
+    width: 16%;
+}
+
+.x-centralize {
+    margin-left: 27%;
+    margin-right: auto;
+}
