@@ -1,0 +1,10 @@
+header {
+    background-color: indigo;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header > h1 {
+    font-weight: bold;
+}

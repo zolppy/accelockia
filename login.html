@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My files -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="assets/img/fav.ico" type="image/x-icon">
+    <script src="js/login.js" defer></script>
+
+    <title>Accelockia X</title>
+</head>
+<body>
+    <header class="bg-gradient text-center">
+        <h1>Accelockia X</h1>
+    </header>
+    <main>
+        <div id="container" class="d-flex flex-column align-items-center">
+            <div id="form-wrap" class="mt-5">
+                <form action="login.php" method="post" class="form-inline" autocomplete="off">
+                    <h2 class="mb-5 text-center">Login</h2>
+                    <div id="email-input-wrap" class="mb-3 input-group">
+                        <input type="email" class="form-control" id="email-input-id" placeholder="E-mail">
+                        <span id="email-i-wrap" class="input-group-append input-group-text">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                    <div id="password-input-wrap" class="mb-3 input-group">
+                        <input type="password" id="password-input-id" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Senha">
+                        <button type="button" id="toggle-password-display-button" class="input-group-append input-group-text">
+                            <i id="foo" class="fa fa-eye-slash"></i>
+                        </butto>
+                    </div>
+                    <div id="login-button-wrap" class="d-flex justify-content-end">
+                        <button id="login-button" class="btn btn-primary" type="submit">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100">
+        <span>&copy; Accelockia X 2023 | Gabriel Cavalcante</span>
+        <span>accelockia-x@gmail.com</span>
+    </footer>
+</body>
+</html>

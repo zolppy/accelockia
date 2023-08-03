@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../assets/img/login-bg.jpg');
+}
+
+h2 {
+    color: white;
+}
+
+#form-wrap {
+    background-color: rgba(0, 0, 0, .777);
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, 0.7);
+}
