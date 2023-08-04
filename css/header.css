@@ -3,6 +3,6 @@ header {
     color: white;
 }
 
-#logo {
-    min-width: 100px;
+#title {
+    margin-left: auto;
 }
