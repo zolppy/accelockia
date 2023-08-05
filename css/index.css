@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('../assets/font/source-sans-3/SourceSans3-Regular.ttf') format('truetype');
+}
+
+body {
+    background-image: url('../assets/imgs/login-bg.jpg');
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+#form-wrap {
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, .7);
+    width: 400px;
+}
+
+#form-wrap,
+.form-control,
+.form-control:focus,
+#email-icon-wrap,
+#password-visibility-button {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.subtitle,
+.form-control::placeholder,
+#email-input,
+#email-icon-wrap,
+#password-input,
+#password-visibility-icon {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url('../assets/imgs/phone-login-bg.png');
+    }
+
+    .header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #ifba-logo {
+        min-width: 100px;
+    }
+
+    #form-wrap {
+        width: 350px;
+    }
+}
+
+header {
+    background-color: indigo;
+    color: white;
+}
+
+#title {
+    margin-left: auto;
+}
+
+footer {
+    color: white;
+}

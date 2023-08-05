@@ -2,32 +2,13 @@
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('../assets/font/source-sans-3/SourceSans3-Regular.ttf') format('truetype');
+    src: url('../../assets/fonts/source-sans-3/SourceSans3-Regular.ttf') format('truetype');
 }
 
 body {
-    /* background-image: url('../assets/img/home-bg.jpg');
-    background-size: cover; */
     font-family: 'Source Sans 3', sans-serif;
 }
 
-header {
+footer {
     color: white;
-}
-
-#header-wrap {
-    background-color: indigo;
-}
-
-#title {
-    margin-left: auto;
-}
-
-li {
-    border: 1px solid red;
-}
-
-nav {
-    border: 1px solid red;
-    background-color: orange;
 }
