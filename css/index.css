@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Source Sans 3';
-    src: url('../assets/font/source-sans-3/SourceSans3-Regular.ttf') format('truetype');
-}
+/* Regular and bold */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
 
 body {
-    background-image: url('../assets/imgs/login-bg.jpg');
+    background-image: url('../img/login-bg.jpg');
     font-family: 'Source Sans 3', sans-serif;
 }
 
@@ -36,7 +34,7 @@ body {
 /* Mobile */
 @media screen and (max-width: 480px) {
     body {
-        background-image: url('../assets/imgs/phone-login-bg.png');
+        background-image: url('../img/phone-login-bg.png');
     }
 
     .header {

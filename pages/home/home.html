@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.css">
-    <script src="../../assets/bootstrap/js/bootstrap.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../assets/font-awesome/css/all.min.css">
-    <script src="../../assets/font-awesome/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     
-    <!-- My files -->
+    <!-- My sources -->
     <link rel="stylesheet" href="home.css">
     
     <link rel="shortcut icon" href="../../assets/imgs/favicon.ico" type="image/x-icon">
     <title>Accelockia</title>
 </head>
 <body>
-    <header class="bg-gradient py-1">
+    <header class="bg-gradient d-flex align-items-center py-1 row">
+        <img class="col-2" id="ifba-logo" src="../../img/ifba-logo.png" alt="Logo do ifba de jacobina">
+        <h1 id="title" class="fw-bold col-7">Accelockia</h1>
     </header>
     <main>
         <div class="container-fluid">
-        </div>
+            <div class="row flex-nowrap">
+                <div id="sidebar" class="col-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero adipisci odio vitae dolor nulla dignissimos aliquam perspiciatis exercitationem, tempore corrupti sed mollitia consequatur at quam eligendi cumque corporis sequi.
+                </div>
+                <div id="content" class="col-10">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis facere, obcaecati sapiente ad quasi aut, harum distinctio earum dicta repudiandae nihil voluptatibus voluptatum libero ex dolorum ullam officiis labore deleniti?
+                </div>
+            </div>
+        </div>        
     </main>
     <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100 position-fixed fixed-bottom py-1">
         <span>&copy; Accelockia 2023 | Gabriel Cavalcante</span>
