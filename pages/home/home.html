@@ -8,39 +8,84 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     
     <!-- My sources -->
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/sidebar.js" defer></script>
     
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
     <title>Accelockia</title>
 </head>
 <body>
-    <header class="bg-gradient d-flex align-items-center py-1 row">
-        <img class="col-2" id="ifba-logo" src="../../img/ifba-logo.png" alt="Logo do ifba de jacobina">
-        <h1 id="title" class="fw-bold col-7">Accelockia</h1>
+    <header class="bg-gradient d-flex align-items-center justify-content-between fixed-top">
+        <h1 id="title" class="fw-bold">Accelockia | Controle de acesso</h1>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gabriel Cavalcante
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        <div class="container-fluid">
-            <div class="row flex-nowrap">
-                <div id="sidebar" class="col-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero adipisci odio vitae dolor nulla dignissimos aliquam perspiciatis exercitationem, tempore corrupti sed mollitia consequatur at quam eligendi cumque corporis sequi.
+        <div class="container-fluid row">
+            <nav class="menu-lateral col-2">
+                <div class="btn-expandir">
+                    <i class="bi bi-list" id="btn-exp"></i>
                 </div>
-                <div id="content" class="col-10">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis facere, obcaecati sapiente ad quasi aut, harum distinctio earum dicta repudiandae nihil voluptatibus voluptatum libero ex dolorum ullam officiis labore deleniti?
-                </div>
+                <ul>
+                    <li class="item-menu ativo">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-clock-history"></i></span>
+                            <span class="txt-link">Histórico</span>
+                        </a>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-file-earmark-plus"></i></span>
+                            <span class="txt-link">Cadastro</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-people"></i></span>
+                            <span class="txt-link">Usuários</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
+                            <span class="txt-link">Relatório</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-gear"></i></span>
+                            <span class="txt-link">Ajustes</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-key"></i></span>
+                            <span class="txt-link">Tags</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content col-10 d-flex justify-content-center align-items-center">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore alias in quos quibusdam? Reprehenderit quisquam magnam recusandae, eligendi excepturi rerum. Excepturi sit enim dolor nesciunt possimus non, natus repellat.</span>
             </div>
-        </div>        
+        </div>
     </main>
-    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient w-100 position-fixed fixed-bottom py-1">
+    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient fixed-bottom">
         <span>&copy; Accelockia 2023 | Gabriel Cavalcante</span>
         <span>accelockia@gmail.com</span>
     </footer>

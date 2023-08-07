@@ -4,27 +4,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
 
 body {
-    background-image: url('../img/login-bg.jpg');
     font-family: 'Source Sans 3', sans-serif;
 }
 
-header {
+header,
+footer {
     background-color: indigo;
     color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #title {
-    margin-left: auto;
-}
-
-#sidebar {
-    border: 1px solid red;
-}
-
-#content {
-    border: 1px solid red;
+    font-size: 28px;
+    margin-left: 2%;
 }
 
 footer {
-    color: white;
+    font-size: 16px;
 }
