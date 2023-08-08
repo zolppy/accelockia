@@ -1,22 +1,15 @@
-const menuItem = document.querySelectorAll('.item-menu')
+const lis = document.querySelectorAll('.li');
 
-function selectLink() {
-    menuItem.forEach((item) => 
-        item.classList.remove('ativo')
-    )
+lis.forEach(item => item.addEventListener('click', function() {
+    lis.forEach(item => item.classList.remove('actived'));
 
-    this.classList.add('ativo');
-};
+    item.classList.add('actived');
+}));
 
-menuItem.forEach((item) => 
-    item.addEventListener('click', selectLink)
-);
+const button = document.getElementById('button');
 
-/* Expandir o menu */
+button.addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
 
-const btnExp = document.querySelector('#btn-exp');
-const menuSide = document.querySelector('.menu-lateral');
-
-btnExp.addEventListener('click', function() {
-    menuSide.classList.toggle('expandir');
+    sidebar.classList.toggle('expand');
 });

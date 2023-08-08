@@ -37,51 +37,42 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid row">
-            <nav class="menu-lateral col-2">
-                <div class="btn-expandir">
-                    <i class="bi bi-list" id="btn-exp"></i>
-                </div>
-                <ul>
-                    <li class="item-menu ativo">
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-clock-history"></i></span>
-                            <span class="txt-link">Histórico</span>
-                        </a>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-file-earmark-plus"></i></span>
-                            <span class="txt-link">Cadastro</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-people"></i></span>
-                            <span class="txt-link">Usuários</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
-                            <span class="txt-link">Relatório</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-gear"></i></span>
-                            <span class="txt-link">Ajustes</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-key"></i></span>
-                            <span class="txt-link">Tags</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="content col-10 d-flex justify-content-center align-items-center">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore alias in quos quibusdam? Reprehenderit quisquam magnam recusandae, eligendi excepturi rerum. Excepturi sit enim dolor nesciunt possimus non, natus repellat.</span>
+        <div class="container-fluid">
+            <div id="sidebar-wrap">
+                <nav id="sidebar" class="position-fixed top-0 left-0 overflow-hidden">
+                    <ul class="nav">
+                        <button id="button" type="button" class="nav-item btn">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 actived">
+                            <i class="bi bi-clock-history text-white"></i>
+                            <a class="nav-link text-white ms-3" href="#">Histórico</a>
+                        </li>
+                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                            <i class="bi bi-file-earmark-plus text-white"></i>
+                            <a class="nav-link text-white ms-3" href="#">Cadastro</a>
+                        </li>
+                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                            <i class="bi bi-people text-white"></i>
+                            <a class="nav-link text-white ms-3" href="#">Usuários</a>
+                        </li>
+                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                            <i class="bi bi-file-earmark-text text-white"></i>
+                            <a class="nav-link text-white ms-3" href="#">Relatório</a>
+                        </li>
+                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                            <i class="bi bi-gear text-white"></i>
+                            <a class="nav-link text-white ms-3" href="#">Ajustes</a>
+                        </li>
+                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                            <i class="bi bi-key text-white"></i>
+                            <a class="nav-link text-white ms-3" href="#">Tags</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="content" class="bg-black bg-gradient">
+                <span>content</span>
             </div>
         </div>
     </main>

@@ -1,9 +1,8 @@
-@charset "UTF-8";
-
 /* Regular and bold */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
 
 body {
+    width: 100vw;
     font-family: 'Source Sans 3', sans-serif;
 }
 
@@ -22,4 +21,14 @@ footer {
 
 footer {
     font-size: 16px;
+}
+
+#content {
+    width: calc(100vw - 400px);
+    background-color: black;
+    margin-left: 100px;
+}
+
+.container-fluid {
+    padding-left: 0;
 }
