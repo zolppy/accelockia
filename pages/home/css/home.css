@@ -1,13 +1,17 @@
-/* Montserrat alternatives extralight, light, regular, medium, semibold, bold, extrabold and black */
+@charset "UTF-8";
+
+/* Source Sans 3 extralight, light, regular, medium, semibold, bold, extrabold and black */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
-/* Bebas regular */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Montserrat alternatives thin, extralight, light, regular, medium, semibold, bold, extrabold and black */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* font-family: 'Source Sans 3', sans-serif; */
-/* font-family: 'Bebas Neue', sans-serif; */
 /* font-family: 'Montserrat Alternates', sans-serif; */
+
+:root {
+    --transition: transition: .5s ease-in;
+}
 
 body {
     font-family: 'Source Sans 3', sans-serif;
@@ -24,11 +28,6 @@ footer {
 
 #title {
     font-size: 18px;
-    /* margin-left: 2%; */
-}
-
-footer {
-    font-size: 16px;
 }
 
 #content {
@@ -37,12 +36,12 @@ footer {
     margin-top: calc(48px + 1%);
     padding: 1%;
     margin-bottom: 0;
-    transition: .5s ease-in;
+    transition: var(--transition);
 }
 
 #content.retract {
     margin-left: calc(180px + 1%);
-    transition: .5s ease-in;
+    transition: var(--transition);
 }
 
 .text-justify {

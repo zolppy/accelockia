@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --sidebar-background-color: purple;
     --selected-item-color: blue;
@@ -6,33 +8,32 @@
 
 #sidebar {
     background-color: var(--sidebar-background-color);
-    color: white;
     margin-top: 48px;
     width: 60px;
-    height: calc(100vh - 112px);
+    height: calc(100vh - 123px);
     border-right: 3px solid var(--selected-item-color);
     transition: var(--transition);
 }
 
-#sidebar button:active {
+#toggle-menu-button:active {
     border-color: var(--sidebar-background-color);
 }
 
-#sidebar button i {
+#toggle-menu-button i {
     font-size: 30px;
 }
 
-#sidebar i,
+.nav-item i,
 #sidebar a {
     font-size: 24px;
 }
 
-#sidebar li:hover,
-#sidebar li.actived {
+.nav-item:hover,
+.nav-item.actived {
     background-color:var(--selected-item-color);
 }
 
-#sidebar li:hover {
+.nav-item:hover {
     cursor: pointer;
 }
 

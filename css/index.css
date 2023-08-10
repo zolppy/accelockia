@@ -1,17 +1,30 @@
 @charset "UTF-8";
 
-/* Regular and bold */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+/* Source Sans 3 extra light, light, regular, medium, semibold, bold, extrabold and black */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Montserrat alternatives thin, extralight, light, regular, medium, semibold, bold, extrabold and black */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Source Sans 3', sans-serif; */
+/* font-family: 'Montserrat Alternates', sans-serif; */
 
 body {
     background-image: url('../img/login-bg.jpg');
     font-family: 'Source Sans 3', sans-serif;
 }
 
+header,
+footer {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header {
+    background-color: indigo;
+}
+
 #form-wrap {
-    border-radius: 20px;
-    box-shadow: 1px 2px 20px rgba(255, 255, 255, .7);
-    width: 400px;
+    box-shadow: 1px 2px 15px rgba(255, 255, 255, .7);
 }
 
 #form-wrap,
@@ -29,41 +42,4 @@ body {
 #password-input,
 #password-visibility-icon {
     color: rgba(255, 255, 255, 1);
-}
-
-/* Mobile */
-@media screen and (max-width: 480px) {
-    body {
-        background-image: url('../img/phone-login-bg.png');
-    }
-
-    .header {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    #title {
-        font-size: 1.5rem;
-    }
-
-    #ifba-logo {
-        min-width: 100px;
-    }
-
-    #form-wrap {
-        width: 350px;
-    }
-}
-
-header {
-    background-color: indigo;
-    color: white;
-}
-
-#title {
-    margin-left: auto;
-}
-
-footer {
-    color: white;
 }

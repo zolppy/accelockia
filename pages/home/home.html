@@ -5,27 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
     <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     
     <!-- My sources -->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
     <script src="js/sidebar.js" defer></script>
     
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
     <title>Accelockia</title>
 </head>
 <body>
-    <header class="bg-gradient d-flex align-items-center justify-content-between fixed-top text-white">
-        <h1 id="title" class="fw-bold ms-4">Accelockia | Controle de acesso</h1>
+    <header class="bg-gradient d-flex align-items-center justify-content-between fixed-top">
+        <h1 id="title" class="fw-bold ms-4 text-white">Accelockia | Controle de acesso</h1>
         <div class="dropdown">
             <button id="dropdown-button" class="btn btn-primary dropdown-toggle text-white me-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Gabriel Cavalcante
@@ -38,39 +37,37 @@
     </header>
     <main>
         <div class="container-fluid ps-0">
-            <div id="sidebar-wrap">
-                <nav id="sidebar" class="position-fixed top-0 left-0 overflow-hidden">
-                    <ul class="nav">
-                        <button id="button" type="button" class="nav-item btn">
-                            <i class="bi bi-list text-white"></i>
-                        </button>
-                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 actived">
-                            <i class="bi bi-clock-history text-white"></i>
-                            <a class="nav-link text-white ms-3" href="#">Histórico</a>
-                        </li>
-                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
-                            <i class="bi bi-person-plus text-white"></i>
-                            <a class="nav-link text-white ms-3" href="#">Cadastro</a>
-                        </li>
-                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
-                            <i class="bi bi-people text-white"></i>
-                            <a class="nav-link text-white ms-3" href="#">Usuários</a>
-                        </li>
-                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
-                            <i class="bi bi-file-earmark-text text-white"></i>
-                            <a class="nav-link text-white ms-3" href="#">Relatório</a>
-                        </li>
-                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
-                            <i class="bi bi-gear text-white"></i>
-                            <a class="nav-link text-white ms-3" href="#">Ajustes</a>
-                        </li>
-                        <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
-                            <i class="bi bi-key text-white"></i>
-                            <a class="nav-link text-white ms-3" href="#">Tags</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav id="sidebar" class="top-0 left-0 position-fixed overflow-hidden">
+                <ul class="nav">
+                    <button id="toggle-menu-button" type="button" class="btn">
+                        <i class="bi bi-list text-white"></i>
+                    </button>
+                    <li class="nav-item w-100 d-flex align-items-center py-2 px-3 actived">
+                        <i class="bi bi-clock-history text-white"></i>
+                        <a class="nav-link text-white ms-3" href="#">Histórico</a>
+                    </li>
+                    <li class="nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                        <i class="bi bi-person-plus text-white"></i>
+                        <a class="nav-link text-white ms-3" href="#">Cadastro</a>
+                    </li>
+                    <li class="nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                        <i class="bi bi-people text-white"></i>
+                        <a class="nav-link text-white ms-3" href="#">Usuários</a>
+                    </li>
+                    <li class="nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                        <i class="bi bi-file-earmark-text text-white"></i>
+                        <a class="nav-link text-white ms-3" href="#">Relatório</a>
+                    </li>
+                    <li class="nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                        <i class="bi bi-gear text-white"></i>
+                        <a class="nav-link text-white ms-3" href="#">Ajustes</a>
+                    </li>
+                    <li class="nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
+                        <i class="bi bi-key text-white"></i>
+                        <a class="nav-link text-white ms-3" href="#">Tags</a>
+                    </li>
+                </ul>
+            </nav>
             <div id="content">
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit nihil fugit. Atque aperiam temporibus qui molestias eum quis deleniti quidem libero, nemo, facere nulla labore quos consectetur, possimus quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quos tenetur sed odio placeat molestiae modi commodi quas nisi. Autem, vel aut delectus corporis corrupti sit. Similique laborum dolores ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minus dolores doloribus dolore cumque quas ab minima, aliquam, sunt laboriosam perferendis eligendi id fugit quos alias possimus, praesentium reiciendis quam!

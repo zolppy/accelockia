@@ -1,12 +1,11 @@
-const lis = document.querySelectorAll('.li');
+const button = document.getElementById('toggle-menu-button');
+const navItems = document.querySelectorAll('.nav-item');
 
-lis.forEach(item => item.addEventListener('click', function() {
-    lis.forEach(item => item.classList.remove('actived'));
+navItems.forEach(navItem => navItem.addEventListener('click', function() {
+    navItems.forEach(navItem => navItem.classList.remove('actived'));
 
-    item.classList.add('actived');
+    navItem.classList.add('actived');
 }));
-
-const button = document.getElementById('button');
 
 button.addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
