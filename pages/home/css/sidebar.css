@@ -7,9 +7,9 @@
 #sidebar {
     background-color: var(--sidebar-background-color);
     color: white;
-    margin-top: 52px;
+    margin-top: 48px;
     width: 60px;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 112px);
     border-right: 3px solid var(--selected-item-color);
     transition: var(--transition);
 }

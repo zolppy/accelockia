@@ -24,10 +24,10 @@
     <title>Accelockia</title>
 </head>
 <body>
-    <header class="bg-gradient d-flex align-items-center justify-content-between fixed-top">
-        <h1 id="title" class="fw-bold">Accelockia | Controle de acesso</h1>
+    <header class="bg-gradient d-flex align-items-center justify-content-between fixed-top text-white">
+        <h1 id="title" class="fw-bold ms-4">Accelockia | Controle de acesso</h1>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button id="dropdown-button" class="btn btn-primary dropdown-toggle text-white me-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Gabriel Cavalcante
             </button>
             <ul class="dropdown-menu">
@@ -37,7 +37,7 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid">
+        <div class="container-fluid ps-0">
             <div id="sidebar-wrap">
                 <nav id="sidebar" class="position-fixed top-0 left-0 overflow-hidden">
                     <ul class="nav">
@@ -49,7 +49,7 @@
                             <a class="nav-link text-white ms-3" href="#">Histórico</a>
                         </li>
                         <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
-                            <i class="bi bi-file-earmark-plus text-white"></i>
+                            <i class="bi bi-person-plus text-white"></i>
                             <a class="nav-link text-white ms-3" href="#">Cadastro</a>
                         </li>
                         <li class="li nav-item w-100 d-flex align-items-center py-2 px-3 mt-1">
@@ -71,14 +71,25 @@
                     </ul>
                 </nav>
             </div>
-            <div id="content" class="bg-black bg-gradient">
-                <span>content</span>
+            <div id="content">
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit nihil fugit. Atque aperiam temporibus qui molestias eum quis deleniti quidem libero, nemo, facere nulla labore quos consectetur, possimus quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quos tenetur sed odio placeat molestiae modi commodi quas nisi. Autem, vel aut delectus corporis corrupti sit. Similique laborum dolores ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minus dolores doloribus dolore cumque quas ab minima, aliquam, sunt laboriosam perferendis eligendi id fugit quos alias possimus, praesentium reiciendis quam!
+                </p>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, laborum non? Quo officia amet facilis asperiores aspernatur architecto nobis praesentium similique id exercitationem nihil pariatur dolore quidem ex, totam dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque est, eveniet sapiente quisquam soluta et corporis error id tempore praesentium molestiae quis amet consectetur at, saepe minus enim odit exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni aut doloremque totam praesentium sequi non velit in incidunt, aperiam maiores explicabo neque eaque sint tempore. Laudantium eveniet magnam rerum.
+                </p>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam corrupti ad laudantium quae est placeat aspernatur omnis consequatur voluptatem officiis veniam at, rem quia fugit eaque necessitatibus voluptatibus unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsa, debitis dolore inventore officia aliquid veritatis ratione. Sed sint expedita ducimus mollitia cupiditate, numquam sunt totam eaque praesentium fugit vero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci ipsa vel fuga, est minima, blanditiis aspernatur, similique possimus nam accusamus minus cupiditate? Quasi non quia autem consectetur dolorum corporis!
+                </p>
             </div>
         </div>
     </main>
-    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient fixed-bottom">
-        <span>&copy; Accelockia 2023 | Gabriel Cavalcante</span>
-        <span>accelockia@gmail.com</span>
+    <footer class="bg-gradient py-0 fixed-bottom row">
+        <div id="info" class="col-7 text-white d-flex flex-column justify-content-center align-items-center">
+            <span>&copy; Accelockia 2023 | Gabriel Cavalcante</span>
+            <span>accelockia@gmail.com</span>
+        </div>
+        <img id="ifba-logo" class="col-2 me-4" src="../../img/ifba-logo.png" alt="logo do ifba de jacobina">
     </footer>
 </body>
 </html>

@@ -1,22 +1,30 @@
-/* Regular and bold */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+/* Montserrat alternatives extralight, light, regular, medium, semibold, bold, extrabold and black */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+/* Bebas regular */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Montserrat alternatives thin, extralight, light, regular, medium, semibold, bold, extrabold and black */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Source Sans 3', sans-serif; */
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Montserrat Alternates', sans-serif; */
 
 body {
-    width: 100vw;
     font-family: 'Source Sans 3', sans-serif;
 }
 
 header,
 footer {
+    font-family: 'Montserrat Alternates', sans-serif;
     background-color: indigo;
-    color: white;
     padding-top: 5px;
     padding-bottom: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .8);
 }
 
 #title {
-    font-size: 28px;
-    margin-left: 2%;
+    font-size: 18px;
+    /* margin-left: 2%; */
 }
 
 footer {
@@ -24,11 +32,37 @@ footer {
 }
 
 #content {
-    width: calc(100vw - 400px);
-    background-color: black;
-    margin-left: 100px;
+    border: 1px solid red;
+    margin-left: calc(60px + 1%);
+    margin-top: calc(48px + 1%);
+    padding: 1%;
+    margin-bottom: 0;
+    transition: .5s ease-in;
 }
 
-.container-fluid {
-    padding-left: 0;
+#content.retract {
+    margin-left: calc(180px + 1%);
+    transition: .5s ease-in;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#info {
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+.dropdown-menu {
+    background-color: purple;
+}
+
+.dropdown-item,
+.dropdown-item:hover {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: blue;
 }

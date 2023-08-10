@@ -10,6 +10,8 @@ const button = document.getElementById('button');
 
 button.addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
+    const content = document.getElementById('content');
 
     sidebar.classList.toggle('expand');
+    content.classList.toggle('retract');
 });
