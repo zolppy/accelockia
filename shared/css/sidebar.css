@@ -31,6 +31,10 @@
     font-size: 30px;
 }
 
+.nav-item i {
+    pointer-events: none;
+}
+
 .nav-item i,
 .nav-item a {
     font-size: 24px;
