@@ -1,43 +1,46 @@
 @charset "UTF-8";
 
 :root {
-    --sidebar-background-color: purple;
-    --selected-item-color: blue;
+    --sidebar-bg-color: purple;
+    --selected-item-bg-color: blue;
     --transition: .5s ease-in;
 }
 
 #sidebar {
-    background-color: var(--sidebar-background-color);
     margin-top: 48px;
     width: 60px;
     height: calc(100vh - 123px);
-    border-right: 3px solid var(--selected-item-color);
-    transition: var(--transition);
-}
-
-#toggle-menu-button:active {
-    border-color: var(--sidebar-background-color);
-}
-
-#toggle-menu-button i {
-    font-size: 30px;
-}
-
-.nav-item i,
-#sidebar a {
-    font-size: 24px;
-}
-
-.nav-item:hover,
-.nav-item.actived {
-    background-color:var(--selected-item-color);
-}
-
-.nav-item:hover {
-    cursor: pointer;
+    border-right: 3px solid var(--selected-item-bg-color);
+    background-color: var(--sidebar-bg-color);
 }
 
 #sidebar.expand {
     width: 180px;
+}
+
+#sidebar,
+#sidebar.expand {
     transition: var(--transition);
+}
+
+#menu-toggle-button:active {
+    border-color: var(--sidebar-bg-color);
+}
+
+#menu-toggle-button i {
+    font-size: 30px;
+}
+
+.nav-item i,
+.nav-item a {
+    font-size: 24px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: var(--selected-item-bg-color);
+}
+
+.nav-item:hover {
+    cursor: pointer;
 }

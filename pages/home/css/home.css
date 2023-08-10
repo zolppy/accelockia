@@ -10,7 +10,7 @@
 /* font-family: 'Montserrat Alternates', sans-serif; */
 
 :root {
-    --transition: transition: .5s ease-in;
+    --transition: .5s ease-in;
 }
 
 body {
@@ -35,29 +35,25 @@ footer {
     margin-left: calc(60px + 1%);
     margin-top: calc(48px + 1%);
     padding: 1%;
-    margin-bottom: 0;
+}
+
+#content,
+#content.rectract {
     transition: var(--transition);
 }
 
 #content.retract {
     margin-left: calc(180px + 1%);
-    transition: var(--transition);
 }
 
 .text-justify {
     text-align: justify;
 }
 
-#info {
-    margin-left: auto;
-    margin-right: 90px;
-}
-
 .dropdown-menu {
     background-color: purple;
 }
 
-.dropdown-item,
 .dropdown-item:hover {
     color: white;
 }

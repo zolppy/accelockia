@@ -1,13 +1,16 @@
-const button = document.getElementById('toggle-menu-button');
+const toggleMenuButton = document.getElementById('menu-toggle-button');
 const navItems = document.querySelectorAll('.nav-item');
 
-navItems.forEach(navItem => navItem.addEventListener('click', function() {
-    navItems.forEach(navItem => navItem.classList.remove('actived'));
+function removeAllActivedClasses() {
+    navItems.forEach(navItem => navItem.classList.remove('active'));
+}
 
-    navItem.classList.add('actived');
+navItems.forEach(navItem => navItem.addEventListener('click', function() {
+    removeAllActivedClasses();
+    navItem.classList.add('active');
 }));
 
-button.addEventListener('click', function() {
+toggleMenuButton.addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
     const content = document.getElementById('content');
 
