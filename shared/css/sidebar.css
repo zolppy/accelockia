@@ -3,13 +3,14 @@
 :root {
     --sidebar-bg-color: purple;
     --selected-item-bg-color: blue;
-    --transition: .5s ease-in;
+    --transition5: .5s ease-in;
+    --transition3: .3s ease-in;
 }
 
 #sidebar {
     margin-top: 48px;
     width: 60px;
-    height: calc(100vh - 123px);
+    height: 100%;
     border-right: 3px solid var(--selected-item-bg-color);
     background-color: var(--sidebar-bg-color);
 }
@@ -20,7 +21,7 @@
 
 #sidebar,
 #sidebar.expand {
-    transition: var(--transition);
+    transition: var(--transition5);
 }
 
 #menu-toggle-button:active {
@@ -47,4 +48,5 @@
 
 .nav-item:hover {
     cursor: pointer;
+    transition: var(--transition3);
 }
