@@ -1,1 +1,24 @@
-/* TODO */
+@charset "UTF-8";
+
+.form-control,
+.form-control:focus {
+    transition: .2s ease;
+}
+
+.form-control {
+    margin-top: 0;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+    border-color: blue;
+}

@@ -60,3 +60,7 @@ footer {
     transition: var(--transition3);
     background-color: blue;
 }
+
+#info {
+    margin-left: 15%;
+}
