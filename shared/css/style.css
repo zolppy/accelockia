@@ -32,10 +32,8 @@ footer {
 }
 
 #content {
-    border: 1px solid red;
-    margin-left: calc(60px + 1%);
-    margin-top: calc(48px + 1%);
-    padding: 1%;
+    margin-left: calc(60px + 10px);
+    margin-top: calc(48px + 10px);
 }
 
 #content,
@@ -44,7 +42,7 @@ footer {
 }
 
 #content.retract {
-    margin-left: calc(180px + 1%);
+    margin-left: calc(180px + 10px);
 }
 
 .text-justify {
@@ -62,5 +60,5 @@ footer {
 }
 
 #info {
-    margin-left: 15%;
+    margin-left: 20%;
 }

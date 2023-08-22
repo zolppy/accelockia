@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* Montserrat alternatives thin, extralight, light, regular, medium, semibold, bold, extrabold and black */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Montserrat Alternates', sans-serif; */
+
 .form-control,
 .form-control:focus {
     transition: .2s ease;
@@ -21,4 +26,10 @@
     box-shadow: none;
     border-bottom: 2px solid rgba(0, 0, 0, .3);
     border-color: blue;
+}
+
+#content,
+form {
+    /* border: 1px solid red; */
+    color: black;
 }

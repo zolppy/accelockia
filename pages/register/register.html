@@ -35,8 +35,8 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid ps-0">
-            <nav id="sidebar" class="top-0 left-0 position-fixed overflow-hidden">
+        <div class="container-fluid ps-0 position-absolute">
+            <nav id="sidebar" class="top-0 left-0 position-fixed overflow-hidden position-relative">
                 <ul class="nav">
                     <button id="menu-toggle-button" type="button" class="btn">
                         <i class="bi bi-list text-white"></i>
@@ -67,56 +67,58 @@
                     </li>
                 </ul>
             </nav>
-            <div id="content">
-                <!-- <h2 class="fw-bold fs-2">Cadastro</h2> -->
-                <form action="register.php" method="post" autocomplete="on">
-                    <!-- Name, last name and e-mail -->
+            <div id="content" class="position-relative border border-black p-3">
+                <form action="register.php" method="post" autocomplete="on" class="mx-auto">
+                    <!-- <h2 id="form-title" class="fw-bold fs-2">Cadastro</h2> -->
+                    <legend class="mb-4 mt-0 fs-2 fw-bold">Cadastro</legend>
+                    <hr class="border border-black mt-0 mb-4">
+                    <!-- Full name, registration number and e-mail -->
                     <div class="d-flex justify-content-between">
                         <div id="fullname-input-wrap">
                             <label for="fullname-input" class="form-label mb-0">*Nome completo</label>
-                            <input type="text" class="form-control" id="fullname-input" name="fullname-input" required autocomplete="username">
+                            <input type="text" class="form-control form-control-sm" id="fullname-input" name="fullname-input" required autocomplete="username">
                         </div>
                         <div id="registrationnumber-input-wrap">
                             <label for="registrationnumber-input" class="form-label mb-0">*Número de matrícula</label>
-                            <input type="text" class="form-control" id="registrationnumber-input" name="registrationnumber-input" required autocomplete="">
+                            <input type="text" class="form-control form-control-sm" id="registrationnumber-input" name="registrationnumber-input" required autocomplete="">
                         </div>
                         <div id="email-input-wrap">
                             <label for="email-input" class="form-label mb-0">*E-mail</label>
-                            <input type="email" class="form-control" id="email-input" name="email-input" required autocomplete="email">
+                            <input type="email" class="form-control form-control-sm" id="email-input" name="email-input" required autocomplete="email">
                         </div>
                     </div>
                     <!-- Tel, CEP and public place -->
-                    <div class="d-flex justify-content-between mt-4">
+                    <div class="d-flex justify-content-between mt-3">
                         <div id="tel-input-wrap">
                             <label for="tel-input" class="form-label mb-0">Telefone</label>
-                            <input type="tel" class="form-control" id="tel-input" name="tel-input" autocomplete="tel">
+                            <input type="tel" class="form-control form-control-sm" id="tel-input" name="tel-input" autocomplete="tel">
                         </div>
                         <div id="cep-input-wrap">
                             <label for="cep-input" class="form-label mb-0">CEP</label>
-                            <input type="text" class="form-control" id="cep-input" name="cep-input" autocomplete="">
+                            <input type="text" class="form-control form-control-sm" id="cep-input" name="cep-input" autocomplete="">
                         </div>
                         <div id="publicplace-input-wrap">
                             <label for="publicplace-input" class="form-label mb-0">Logradouro</label>
-                            <input type="text" class="form-control" id="publicplace-input" name="publicplace-input" autocomplete="">
+                            <input type="text" class="form-control form-control-sm" id="publicplace-input" name="publicplace-input" autocomplete="">
                         </div>
                     </div>
                     <!-- Neighborhood, complement and city -->
-                    <div class="d-flex justify-content-between mt-4">
+                    <div class="d-flex justify-content-between mt-3">
                         <div id="neighborhood-input-wrap">
                             <label for="neighborhood-input" class="form-label mb-0">Bairro</label>
-                            <input type="text" class="form-control" id="neighborhood-input" name="neighborhood-input" autocomplete="">
+                            <input type="text" class="form-control form-control-sm" id="neighborhood-input" name="neighborhood-input" autocomplete="">
                         </div>
                         <div id="complement-input-wrap">
                             <label for="complement-input" class="form-label mb-0">Complemento</label>
-                            <input type="text" class="form-control" id="complement-input" name="complement-input" autocomplete="">
+                            <input type="text" class="form-control form-control-sm" id="complement-input" name="complement-input" autocomplete="">
                         </div>
                         <div id="city-input-wrap">
                             <label for="city-input" class="form-label mb-0">Cidade</label>
-                            <input type="text" class="form-control" id="city-input" name="city-input" autocomplete="">
+                            <input type="text" class="form-control form-control-sm" id="city-input" name="city-input" autocomplete="">
                         </div>
                     </div>
                     <!-- State, login and password -->
-                    <div class="d-flex justify-content-between mt-4">
+                    <div class="d-flex justify-content-between mt-3">
                         <div id="state-select-wrap">
                             <select id="state-select" class="form-select mt-4" aria-label="Slecione um estado">
                                 <option selected>Slecione um estado</option>
@@ -151,15 +153,15 @@
                         </div>
                         <div id="login-input-wrap" class="ms-4">
                             <label for="login-input" class="form-label mb-0">*Login</label>
-                            <input type="text" class="form-control" name="login-input" id="login-input" required autocomplete="name">
+                            <input type="text" class="form-control form-control-sm" name="login-input" id="login-input" required autocomplete="name">
                         </div>
                         <div id="password-input-wrap">
                             <label for="password-input" class="form-label mb-0">*Senha</label>
-                            <input type="password" class="form-control" name="password-input" id="password-input" required>
+                            <input type="password" class="form-control form-control-sm" name="password-input" id="password-input" required>
                         </div>
                     </div>
                     <!-- Active, administrator and tag -->
-                    <div class="d-flex justify-content-between mt-4">
+                    <div class="d-flex justify-content-between mt-3">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="active-ckeckbox" checked>
                             <label class="form-check-label" for="active-ckeckbox">
@@ -178,7 +180,7 @@
                             </select>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-4">
+                    <button type="submit" class="btn btn-primary mt-3">
                         <i class="fa-solid fa-floppy-disk"></i>
                         <span class="ms-1">Salvar</span>
                     </button>
