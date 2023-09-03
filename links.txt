@@ -15,11 +15,9 @@
 <!-- IFBA logos -->
 https://portal.ifba.edu.br/dgcom/documentos-e-manuais/manuais
 
-/* Source Sans 3 extra light, light, regular, medium, semibold, bold, extrabold and black */
+<!-- Fonts -->
+/* font-family: 'Source Sans 3', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
 
-/* Montserrat alternatives thin, extralight, light, regular, medium, semibold, bold, extrabold and black */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* font-family: 'Source Sans 3', sans-serif; */
 /* font-family: 'Montserrat Alternates', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
