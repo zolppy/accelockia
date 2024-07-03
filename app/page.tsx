@@ -1,28 +1,28 @@
 "use client";
 
 import Image from "next/image";
+import { useContext, useEffect, useState } from "react";
+import { FaLock } from "react-icons/fa6";
 import Container from "./components/generic/Container";
 import Form from "./components/generic/Form";
 import logo from "@/public/svg/logo-no-background.svg";
-import { FaLock } from "react-icons/fa6";
-import InputWrapper from "./components/login/LoginForm/components/InputWrapper";
-import Label from "./components/login/LoginForm/components/Label";
-import Input from "./components/login/LoginForm/components/Input";
-import SubmitButton from "./components/login/LoginForm/components/SubmitButton";
-import { useContext, useEffect, useState } from "react";
+import InputWrapper from "./components/login/InputWrapper";
+import Label from "./components/login/Label";
+import Input from "./components/login/Input";
+import SubmitButton from "./components/login/SubmitButton";
+import ChangePassword from "./components/login/ChangePassword";
 import { ILoginCtx, LoginCtx } from "@/context/LoginCtx";
 import { validateEmail } from "@/utils/validators/email";
-import ChangePassword from "./components/login/LoginForm/components/ChangePassword";
 
 export default function Login(): React.ReactElement {
-  const { login, email, password, updateEmail, updatePassword } = useContext(
+  const { email, password, updateEmail, updatePassword } = useContext(
     LoginCtx
   ) as ILoginCtx;
   const [isDisabled, setIsDisabled] = useState<boolean>(true);
 
   useEffect(() => {
     setIsDisabled(!(password.length >= 8 && validateEmail(email)));
-  }, [login]);
+  }, [email, password]);
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();

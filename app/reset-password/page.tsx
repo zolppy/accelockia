@@ -1,16 +1,16 @@
 "use client";
 
+import { useContext, useEffect, useState } from "react";
+import { FaLock } from "react-icons/fa6";
 import Container from "../components/generic/Container";
 import Image from "next/image";
 import logo from "@/public/svg/logo-no-background.svg";
-import { FaLock } from "react-icons/fa6";
-import InputWrapper from "../components/login/LoginForm/components/InputWrapper";
-import Label from "../components/login/LoginForm/components/Label";
-import Input from "../components/login/LoginForm/components/Input";
-import SubmitButton from "../components/login/LoginForm/components/SubmitButton";
+import InputWrapper from "../components/login/InputWrapper";
+import Label from "../components/login/Label";
+import Input from "../components/login/Input";
+import SubmitButton from "../components/login/SubmitButton";
 import BackButton from "../components/generic/BackButton";
 import Form from "../components/generic/Form";
-import { useContext, useEffect, useState } from "react";
 import { ILoginCtx, LoginCtx } from "@/context/LoginCtx";
 import { validateEmail } from "@/utils/validators/email";
 
